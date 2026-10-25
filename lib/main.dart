@@ -330,3 +330,47 @@ class _OrdersScreenState extends State<OrdersScreen> {
     );
   }
 }
+
+
+// ================= PLACEHOLDERS FOR SCREENS =================
+class EarningsScreen extends StatelessWidget {
+  const EarningsScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: bgColor,
+      appBar: AppBar(
+        title: const Text('My Earnings'),
+        backgroundColor: maroon,
+      ),
+      body: const Center(
+        child: Text(
+          'Total Earnings: ₹0.00',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
+      ),
+    );
+  }
+}
+
+class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: bgColor,
+      appBar: AppBar(
+        title: const Text('My Profile'),
+        backgroundColor: maroon,
+      ),
+      body: const Center(
+        child: Text(
+          'Worker Profile & Settings',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
+      ),
+    );
+  }
+}
